@@ -19,3 +19,12 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+links:
+  - title: Cast
+    url: "/cast/"
+  - title: Episodes
+    url: "/episodes/"
+  - title: Blog
+    url: "/blog/"
+  - title: Contact
+    url: "/contact/"

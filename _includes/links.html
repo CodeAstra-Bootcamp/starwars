@@ -1,0 +1,7 @@
+{% for link in site.links %}
+  {% if include.context == "landing" %}
+    <a href="{{ link.url | prepend: site.baseurl }}">{{link.title}}</a>
+  {% else %}
+    <li><a href="{{ link.url | prepend: site.baseurl }}">{{link.title}}</a></li>
+  {% endif %}
+{% endfor %}
