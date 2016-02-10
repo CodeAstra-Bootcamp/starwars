@@ -1,0 +1,28 @@
+#blog {
+  #posts {
+    .post {
+      margin-bottom: 2em;
+
+      .published {
+        background-color: #fff;
+        text-align: center;
+        width: 10em;
+        height: 10em;
+        border-radius: 50%;
+        padding-top: 1.3em;
+        color: #272B30;
+        float: left;
+        margin-right: 20px;
+
+        .date {
+          font-size: 4em;
+        }
+
+        .month {
+          font-size: 1.2em;
+          margin-top: -0.5em;
+        }
+      }
+    }
+  }
+}

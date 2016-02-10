@@ -3,19 +3,24 @@ layout: page
 permalink: /blog/
 ---
 
-<div class="home">
+<div id="blog">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1>Star Wars Blog &amp; News</h1>
 
-  <ul class="post-list">
+  <div id="posts">
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
+      <div class="post clearfix">
+        <div class="published">
+          <div class="date">{{ post.date | date: "%-d" }}</div>
+          <div class="month">{{ post.date | date: "%b, %Y" }}</div>
+        </div>
         <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
-      </li>
+        <p>
+          {{post.excerpt}}
+        </p>
+      </div>
     {% endfor %}
   </ul>
 
