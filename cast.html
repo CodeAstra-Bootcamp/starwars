@@ -2,5 +2,15 @@
 layout: page
 permalink: /cast/
 ---
-
-<h1>Cast Page</h1>
+<h1>Casting</h1>
+<div id="casting">
+  {% for cast in site.data.casting %}
+    <div class="well cast clearfix">
+      <img src="../images/cast/{{cast.image}}" alt="Hans Solo" class="img-circle img-thumbnail"/>
+      <h2>{{cast.name}} ({{cast.artist}})</h2>
+      <p>
+        {{cast.description}}
+      </p>
+    </div>
+  {% endfor %}
+</div>
